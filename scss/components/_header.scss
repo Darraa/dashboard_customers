@@ -1,0 +1,58 @@
+.main__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 10px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    &-title {
+        span {
+            color: var(--active-members);
+        }
+    }
+
+    &-search {
+        position: relative;
+
+        input {
+            background: #F9FBFF;
+            border-radius: 10px;
+            padding: 10px 10px 10px 42px;
+            outline: none;
+        }
+
+        input::-webkit-input-placeholder {
+            color: var(--title);
+        }
+
+        input::-moz-placeholder {
+            color: var(--title);
+        }
+
+        input:-ms-input-placeholder {
+            color: var(--title);
+        }
+
+        input::-ms-input-placeholder {
+            color: var(--title);
+        }
+
+        input::placeholder {
+            color: var(--title);
+        }
+    }
+
+    .search-icon {
+        position: absolute;
+        bottom: 8px;
+        left: 12px;
+        padding-top: 10px;
+    }
+}

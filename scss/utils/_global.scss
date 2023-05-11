@@ -1,0 +1,92 @@
+:root {
+    --active: #5932EA;
+    --navbar: #9197B3;
+    --user-position: #757575;
+    --version: #838383;
+
+    --active-members: #16C098;
+    --title: #B5B7C0;
+    --pag: #404B52;
+
+    --active-label: #00B087;
+    --inactive-label: #DF0404;
+}
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+aside {
+    width: 20%;
+}
+
+.main {
+    width: 80%;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: -0.01em;
+    color: #000000;
+}
+
+.active-item {
+    border-radius: 8px;
+    background-color: var(--active);
+
+    span {
+        color: #fff;
+    }
+}
+
+.greating,
+.main__content {
+    margin-left: 4.375rem;
+    margin-top: 2.5rem;
+}
+
+.main__content {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+    border-radius: 30px;
+    width: 85%;
+    padding: 2.5rem;
+}
+
+@media screen and (max-width: 990px) {
+    main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    aside,
+    .main {
+        width: 100%;
+    }
+
+    .greating,
+    .main__content {
+        margin: 10px;
+        text-align: center;
+    }
+}
